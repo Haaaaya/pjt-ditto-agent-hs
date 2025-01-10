@@ -1,4 +1,5 @@
 .PHONY: check
 check:
-	poetry run ruff check . --fix
-	poetry run ruff format .
+	uvx ruff check src . --fix
+	uvx ruff format src .
+	uvx pyright

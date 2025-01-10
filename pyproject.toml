@@ -1,23 +1,12 @@
-[tool.poetry]
+[project]
 name = "pjt-ditto-agent-hs"
 version = "0.1.0"
-description = ""
-authors = ["Haaaayae <hayatosetoya@gmail.com>"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-pydantic-settings = "^2.7.1"
-langchain-google-vertexai = "^2.0.9"
-pydantic = "2.9.0"
-ruff = "^0.8.6"
-
-[tool.ruff]
-include = ["src"]
-exclude = ["src/__pycache__"]
-fix = true
-lint.select = ["E", "F", "W", "C", "A"]
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "ipython>=8.31.0",
+    "langchain>=0.3.14",
+    "langchain-google-vertexai>=2.0.7",
+    "langgraph>=0.2.61",
+]
